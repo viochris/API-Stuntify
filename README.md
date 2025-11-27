@@ -26,7 +26,7 @@ The system acts as a centralized inference unit. It doesn't just "guess"; it rec
 * **Cross-Origin Ready:** Fully configured with **Flask-CORS** to serve requests from any device—be it a Web App, Mobile Phone, or IoT Device.
 
 ## 🛠️ Tech Stack
-* **Core:** Python 3.x
+* **Core:** Python 3.9+
 * **Service:** Flask (Microframework)
 * **Computation:** NumPy, Scikit-Learn, Joblib
 * **Security:** Flask-CORS (Cross-Origin Resource Sharing enabled)
