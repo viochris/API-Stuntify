@@ -50,6 +50,14 @@ except Exception as e:
 # ==========================================
 # 3. Prediction Endpoint
 # ==========================================
+@app.route('/') 
+def home():
+    return jsonify({
+           "status": "OK",
+           "info": "Welcome to the Stunting Prediction API!",
+           "how_to_use": "Send POST to /predict with: jenis_kelamin, umur, tinggi, berat"
+}) 
+    
 @app.route('/predict', methods=['POST'])
 def predict():    
     # Validation: Ensure all artifacts are loaded before processing
@@ -131,3 +139,4 @@ if __name__ == '__main__':
     
     # Run Flask app
     app.run(debug=True, port=port)
+
