@@ -67,14 +67,14 @@ To talk to Stuntify, send a **POST** request to `/predict`.
 1.  **Clone the Repository**
 
     ```bash
-    git clone [https://github.com/viochris/API-Stuntify.git](https://github.com/viochris/API-Stuntify.git)
+    git clone https://github.com/viochris/API-Stuntify.git
     cd API-Stuntify
     ```
 
 2.  **Install Dependencies**
 
     ```bash
-    pip install flask flask-cors scikit-learn numpy joblib
+    pip install -r requirements.txt
     ```
 
 3.  **Run the Server**
